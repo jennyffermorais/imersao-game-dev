@@ -88,7 +88,8 @@ class Jogo {
     inimigo.move();
 
     if (inimigoVisivel) {
-      this.indice++;
+      //this.indice++;
+      this.indice = parseInt( random(0, this.mapa.length) );
       inimigo.aparece();
       if (this.indice > this.mapa.length - 1) {
         this.indice = 0;
